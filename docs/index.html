@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+  </head>
+  <body>
+    <main>
+        <h1>Welcome to My Website</h1>  
+    </main>
+    <div
+      class="gamification_widget"
+      data-type="sidebar"
+      data-height="600px"
+    ></div>
+    <script src="https://ui-libs-cr-dev.gamanzaengage.com/casino-ui-widgets/bundle.min.js"></script>
+    <script>
+      GamificationWidgets.config({
+        init: {
+          serviceUrl: 'https://frontend-api-cr-dev.gamanzaengage.com',
+          clientId: '8a5cd40a-5e37-45b1-b2e0-9e2fe0921786',
+          playerIdentityToken: 'htest110',
+          playerLocale: 'en',
+          // client: 'JP',
+        },
+        player: {
+          name: 'John Smith',
+          shippingAddress: {
+            city: 'Alajuela',
+            country: 'CR',
+            street: 'Test Street',
+            streetNumber: '23',
+            postalCode: '211101',
+            houseNameOrNumber: 'villa america',
+          },
+          playerPhone: '+506000000001',
+          playerEmail: 'german.vargas@gamanza.com',
+          currency: 'CHF',
+          countries: ['CR', 'CN', 'CH', 'CA', 'MX', 'ES', 'FR', 'IT'],
+        },
+        lookAndFeel: {
+          palette: {
+            // mode: 'dark',
+          },
+        },
+
+        translations: [
+          {
+            locale: 'es',
+            keys: {
+              rewardShop: 'Tiendita',
+              buyNow: 'Comprar',
+              your_balance: 'Tu saldo',
+              xpPoints: 'Experiencia',
+              rank: 'Rango',
+              tokens: 'Tokens',
+              productDetails: 'Detalles del Producto',
+              bonuses: 'Mis Bonuses',
+              history: 'Historial',
+              quantity: 'Cantidad',
+              qty: 'Cant',
+              home: 'Casa',
+              shop: 'Tienda',
+              missions: 'Misiones',
+            },
+          },
+        ],
+        assets: {
+          // avatar_image:
+          //   'https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper.png',
+          // menu_rewards_image:
+          //   'https://cdn-icons-png.flaticon.com/512/8829/8829889.png',
+          // menu_booster_image:
+          //   'https://cdn-icons-png.flaticon.com/512/8829/8829889.png',
+          // history_image:
+          //   'https://cdn-icons-png.flaticon.com/512/2645/2645789.png',
+        },
+      })
+    </script>
+  </body>
+</html>
